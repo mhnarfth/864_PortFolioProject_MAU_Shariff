@@ -85,15 +85,7 @@ class IssueCard extends Component {
                 <p className="issue-subtitle">{subtitleString}</p>
               </div>
             </div>
-            {/* <div className="files-changed-header">
-							<p
-								className="files-changed-text"
-								style={{ backgroundColor: iconPR.style.color }}
-							>
-								{pullRequest["changedFiles"]}
-							</p>
-							<p className="files-changed-text-2">Files Changed</p>
-						</div> */}
+            {}
           </div>
           <div className="issue-down">
             <div className="assignee-repo">

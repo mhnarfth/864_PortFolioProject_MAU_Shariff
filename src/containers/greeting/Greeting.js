@@ -6,7 +6,6 @@ import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
 import { NavLink, Link } from "react-router-dom";
-import Contact from "../../pages/contact/ContactComponent";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -17,12 +16,15 @@ export default function Greeting(props) {
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text" style={{ color: theme.text }}>
-                {greeting.title} <span>   </span>
-                <span className="greeting-nickname" style={{ color: theme.text }}>  
-                ( {greeting.nickname} )
-              </span>
+                {greeting.title} <span> </span>
+                <span
+                  className="greeting-nickname"
+                  style={{ color: theme.text }}
+                >
+                  ( {greeting.nickname} )
+                </span>
               </h1>
-              
+
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
@@ -39,17 +41,11 @@ export default function Greeting(props) {
                   className="portfolio-repo-btn"
                 />
               </div>
-              {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
+              {}
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <img
-							alt="saad sitting on table"
-							src={require("../../assests/images/feelingProud.svg")}
-						></img> */}
+            {}
             <FeelingProud theme={theme} />
           </div>
         </div>

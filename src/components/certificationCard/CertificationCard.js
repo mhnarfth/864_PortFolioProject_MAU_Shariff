@@ -10,29 +10,27 @@ class CertificationCard extends Component {
       <Fade bottom duration={2000} distance="20px">
         <div className="cert-card">
           <div className="content">
-
-            {/* Later if I want to Link Certificates, Just uncomment this anchor tag */}
-            {/* <a
-              href={certificate.certificate_link}
-              target="_blank"
-              rel="noopener noreferrer"
-            > */}
-              <div className="content-overlay"></div>
-              <div
-                className="cert-header"
-                style={{ backgroundColor: certificate.color_code }}
-              >
-                <img
-                  className="logo_img"
-                  src={require(`../../assests/images/${certificate.logo_path}`).default}
-                  alt={certificate.alt_name}
-                />
-              </div>
-              <div className="content-details fadeIn-top">
-                <h3 className="content-title" style={{ color: theme.body }}>
-                  {certificate.alt_name}
-                </h3>
-              </div>
+            {}
+            {}
+            <div className="content-overlay"></div>
+            <div
+              className="cert-header"
+              style={{ backgroundColor: certificate.color_code }}
+            >
+              <img
+                className="logo_img"
+                src={
+                  require(`../../assests/images/${certificate.logo_path}`)
+                    .default
+                }
+                alt={certificate.alt_name}
+              />
+            </div>
+            <div className="content-details fadeIn-top">
+              <h3 className="content-title" style={{ color: theme.body }}>
+                {certificate.alt_name}
+              </h3>
+            </div>
             {/* </a> */}
           </div>
           <div className="cert-body">
